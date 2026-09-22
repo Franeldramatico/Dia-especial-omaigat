@@ -1,0 +1,171 @@
+
+> flores-amarillas-para-aranxita@0.0.0 dev
+> ng serve --port=3000 --host=0.0.0.0 --allowed-hosts=true
+
+[1m[33m
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    [39m[22m
+[33m❯[39m Building...
+[32m✔[39m Building...
+[35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m            [2m | [22m[36m211.94 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m          [2m | [22m [36m64.64 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m   [2m | [22m[1m276.59 kB[22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m     [2m | [22m[36m213.20 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m          [2m | [22m  [36m1.84 kB[39m[2m | [22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m[2m | [22m[36m268 bytes[39m[2m | [22m
+
+Application bundle generation complete. [7.561 seconds] - 2026-09-22T00:18:46.936Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3000[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.56.1:[1m3000[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.1.135:[1m3000[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[1m[33mAllowing all hosts via "*" is a security risk. This configuration should only be used when validation for "Host" and "X-Forwarded-Host" headers is performed in another layer, such as a load balancer or reverse proxy. For more information see: https://angular.dev/best-practices/security#preventing-server-side-request-forgery-ssrf[39m[22m
+[1m[33mNG02801: Angular detected that `HttpClient` is not configured to use `fetch` APIs. It's strongly recommended to enable `fetch` for applications that use Server-Side Rendering for better performance and compatibility. To enable `fetch`, add the `withFetch()` to the `provideHttpClient()` call at the root of the application.[39m[22m
+[1m[31mERROR Error: NotYetImplemented
+    at utils.nyi (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:247:11)
+    at EmulatedEncapsulationDomRenderer2.setProperty (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:5077:14)
+    at setDomProperty (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:18972:14)
+    at setPropertyAndInputs (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:18958:3)
+    at Module.ɵɵproperty (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:27650:5)
+    at OpeningGreeting_Template (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:2647:30)
+    at executeTemplate (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:18892:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:19553:7)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:19693:5)
+    at detectChangesInViewIfAttached (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:19676:3)[39m[22m
+[1m[31mERROR Error: NotYetImplemented
+    at utils.nyi (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:247:11)
+    at EmulatedEncapsulationDomRenderer2.setProperty (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:5077:14)
+    at setDomProperty (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:18972:14)
+    at setPropertyAndInputs (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:18958:3)
+    at Module.ɵɵproperty (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:27650:5)
+    at OpeningGreeting_Template (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:2647:30)
+    at executeTemplate (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:18892:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:19553:7)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:19693:5)
+    at detectChangesInViewIfAttached (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:19676:3)[39m[22m
+[1m[31mERROR Error: NotYetImplemented
+    at utils.nyi (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:247:11)
+    at EmulatedEncapsulationDomRenderer2.setProperty (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:5077:14)
+    at setDomProperty (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:18972:14)
+    at setPropertyAndInputs (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:18958:3)
+    at Module.ɵɵproperty (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:27650:5)
+    at OpeningGreeting_Template (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:2647:30)
+    at executeTemplate (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:18892:5)
+    at refreshView (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:19553:7)
+    at detectChangesInView (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:19693:5)
+    at detectChangesInViewIfAttached (eval at runInlinedModule (file:///C:/Users/holam/Documents/02_Proyectos/MiProyectosVSCode/PAGINASWEBS/ParaAranxita%20%F0%9F%92%95/2026/flores-amarillas-para-aranxita/node_modules/vite/dist/node/module-runner.js:913:9), <anonymous>:19676:3)[39m[22m
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m            [2m | [22m[36m211.94 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m          [2m | [22m [36m64.64 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m   [2m | [22m[1m276.59 kB[22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m     [2m | [22m[36m213.20 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m          [2m | [22m  [36m1.84 kB[39m[2m | [22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m[2m | [22m[36m268 bytes[39m[2m | [22m
+
+Application bundle generation complete. [0.177 seconds] - 2026-09-22T00:22:03.566Z
+
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m            [2m | [22m[36m211.94 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m          [2m | [22m [36m64.64 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m   [2m | [22m[1m276.59 kB[22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m     [2m | [22m[36m213.20 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m          [2m | [22m  [36m1.84 kB[39m[2m | [22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m[2m | [22m[36m268 bytes[39m[2m | [22m
+
+Application bundle generation complete. [0.132 seconds] - 2026-09-22T00:22:04.601Z
+
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m211.94 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m [1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m213.20 kB[39m[2m | [22m
+
+Application bundle generation complete. [2.104 seconds] - 2026-09-22T00:22:08.024Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[35mBrowser bundles[39m    
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m [1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m[36m211.94 kB[39m[2m | [22m
+
+
+[35mServer bundles[39m     
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m [1mRaw size[22m
+[32mmain.server.mjs[39m    [2m | [22m[2mmain.server[22m[2m | [22m[36m213.20 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.595 seconds] - 2026-09-22T00:22:08.964Z
+
+Page reload sent to client(s).
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m            [2m | [22m[36m211.94 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m          [2m | [22m [36m64.64 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m   [2m | [22m[1m276.58 kB[22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m     [2m | [22m[36m213.20 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m          [2m | [22m  [36m1.84 kB[39m[2m | [22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m[2m | [22m[36m268 bytes[39m[2m | [22m
+
+Application bundle generation complete. [0.111 seconds] - 2026-09-22T00:22:15.552Z
+
+[33m❯[39m Changes detected. Rebuilding...
+[32m✔[39m Changes detected. Rebuilding...
+[35mBrowser bundles[39m     
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mmain.js[39m             [2m | [22m[2mmain[22m            [2m | [22m[36m211.94 kB[39m[2m | [22m
+[32mstyles.css[39m          [2m | [22m[2mstyles[22m          [2m | [22m [36m64.64 kB[39m[2m | [22m
+
+[1m [22m                   [2m | [22m[1mInitial total[22m   [2m | [22m[1m276.58 kB[22m
+
+
+[35mServer bundles[39m      
+[1mInitial chunk files[22m [2m | [22m[1mNames[22m           [2m | [22m [1mRaw size[22m
+[32mmain.server.mjs[39m     [2m | [22m[2mmain.server[22m     [2m | [22m[36m213.20 kB[39m[2m | [22m
+[32mserver.mjs[39m          [2m | [22m[2mserver[22m          [2m | [22m  [36m1.84 kB[39m[2m | [22m
+[32mpolyfills.server.mjs[39m[2m | [22m[2mpolyfills.server[22m[2m | [22m[36m268 bytes[39m[2m | [22m
+
+Application bundle generation complete. [0.161 seconds] - 2026-09-22T00:22:42.993Z
+

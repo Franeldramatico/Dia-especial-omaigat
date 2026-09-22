@@ -1,0 +1,243 @@
+<!-- Particle Canvas: Golden shimmering sparkles falling gently across the screen (NO emojis) -->
+<app-golden-particles />
+
+<!-- Smooth Opening Greeting Animation Modal on Load -->
+@if (showGreeting()) {
+  <app-opening-greeting (enter)="onEnterGarden()" />
+}
+
+<!-- Detailed Love Letter Modal -->
+@if (showLoveLetter()) {
+  <app-love-letter-modal
+    (closeLetter)="closeLetter()"
+    (openPdf)="openPdf()"
+  />
+}
+
+<!-- PDF Viewer / Extra Letter Modal -->
+@if (showPdfModal()) {
+  <app-pdf-viewer-modal (closePdf)="closePdf()" />
+}
+
+<!-- Floating Romantic Music Controls -->
+<app-floating-music-player />
+
+<!-- Floating Home Button -->
+<button
+  id="floating-home-btn"
+  type="button"
+  (click)="goHome()"
+  class="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-30 w-12 h-12 sm:w-13 sm:h-13 rounded-2xl bg-white/95 backdrop-blur-md border border-[#FDE68A] shadow-xl hover:shadow-2xl hover:bg-[#FEF3C7] text-[#78350F] flex items-center justify-center transition-all cursor-pointer"
+  title="Regresar al inicio"
+  aria-label="Regresar al inicio"
+>
+  <mat-icon class="text-2xl">home</mat-icon>
+</button>
+
+<!-- Main Romantic Webpage Container -->
+<div class="relative min-h-screen flex flex-col bg-[#FFFDF7] text-[#3D2B1F] overflow-x-hidden selection:bg-[#FDE68A] selection:text-[#78350F]">
+
+  <!-- Top Navigation Bar -->
+  <header
+    id="main-nav-bar"
+    class="sticky top-0 z-20 w-full bg-white/85 backdrop-blur-md border-b border-[#FDE68A]/60 transition-all shadow-xs"
+  >
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+      <!-- Title / Brand with Flower Icon -->
+      <div class="flex items-center gap-2.5">
+        <span class="w-8 h-8 rounded-full bg-[#F59E0B]/15 text-[#B45309] flex items-center justify-center">
+          <mat-icon class="text-xl">local_florist</mat-icon>
+        </span>
+        <div class="flex flex-col">
+          <span class="font-script-love text-2xl text-[#92400E] leading-none">
+            Para Aranxita
+          </span>
+          <span class="text-[11px] uppercase tracking-wider text-[#B45309] font-sans-clean font-semibold">
+            Flores Amarillas de Amor
+          </span>
+        </div>
+      </div>
+
+      <!-- Action Buttons in Nav -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <button
+          id="nav-read-letter-btn"
+          type="button"
+          (click)="scrollToLetter()"
+          class="px-3 sm:px-4 py-2 rounded-xl bg-[#FEF3C7] hover:bg-[#FDE68A] text-[#92400E] text-xs sm:text-sm font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shadow-xs"
+          title="Ver la carta de amor detallada"
+        >
+          <mat-icon class="text-base text-[#D97706]">mail</mat-icon>
+          <span class="hidden sm:inline">Carta de Amor :3</span>
+          <span class="sm:hidden">Carta</span>
+        </button>
+
+        <button
+          id="nav-open-pdf-btn"
+          type="button"
+          (click)="openPdf()"
+          class="px-3 sm:px-4 py-2 rounded-xl bg-[#F59E0B] hover:bg-[#D97706] text-white text-xs sm:text-sm font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shadow-xs"
+          title="Abrir la carta en PDF"
+        >
+          <mat-icon class="text-base">picture_as_pdf</mat-icon>
+          <span>Abrir PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex-1">
+    <section
+      id="hero-dedication"
+      class="relative pt-10 sm:pt-16 pb-12 sm:pb-16 px-4 text-center overflow-hidden"
+    >
+      <!-- Subtle warm ambient sunbeam background -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-gradient-to-tr from-[#FEF08A]/30 via-[#FDE68A]/20 to-transparent blur-3xl pointer-events-none -z-10"></div>
+
+      <div class="max-w-3xl mx-auto space-y-5">
+        <!-- Floating tag -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FEF3C7] border border-[#FDE68A] text-[#92400E] text-xs font-semibold uppercase tracking-widest shadow-xs">
+          <mat-icon class="text-sm text-[#D97706]">favorite</mat-icon>
+          <span>Un detalle de flores amarillas para ti :3</span>
+        </div>
+
+        <!-- Main Heading Dedicated to Aranxita -->
+        <h1 class="font-script-love text-6xl sm:text-7xl md:text-8xl text-[#78350F] leading-tight drop-shadow-sm">
+          Mi amada Aranxita
+        </h1>
+
+        <!-- The core quote required by user -->
+        <div class="py-2">
+          <p class="font-serif-cormorant text-2xl sm:text-4xl md:text-5xl font-bold text-[#92400E] leading-snug">
+            «Tú eres el rayo de sol más brillante de mi vida»
+          </p>
+        </div>
+
+        <p class="font-sans-clean text-base sm:text-lg text-[#78350F]/85 max-w-2xl mx-auto leading-relaxed">
+          Estas flores amarillas viajan volando hasta donde estés para recordarte lo inmensamente especial que eres,
+          la luz que traes a mi vida y el amor infinito que te tengo hoy y siempre :3.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="pt-4 flex flex-wrap items-center justify-center gap-3.5">
+          <button
+            id="hero-open-letter-btn"
+            type="button"
+            (click)="scrollToLetter()"
+            class="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-[#F59E0B] to-[#D97706] hover:from-[#D97706] hover:to-[#B45309] text-white font-semibold text-base flex items-center gap-2.5 shadow-lg hover:shadow-xl transition-all transform active:scale-95 cursor-pointer"
+          >
+            <mat-icon class="text-xl">local_post_office</mat-icon>
+            <span>Ver mi carta de amor :3</span>
+          </button>
+
+          <button
+            id="hero-open-pdf-btn"
+            type="button"
+            (click)="openPdf()"
+            class="px-6 py-3.5 rounded-2xl bg-white hover:bg-[#FEF3C7] text-[#92400E] border-2 border-[#FCD34D] font-semibold text-base flex items-center gap-2.5 shadow-sm hover:shadow-md transition-all transform active:scale-95 cursor-pointer"
+          >
+            <mat-icon class="text-xl text-[#B45309]">picture_as_pdf</mat-icon>
+            <span>Carta en PDF</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flowers Showcase Component -->
+    <app-interactive-flower-bouquet
+      (openLoveLetter)="scrollToLetter()"
+      (openPdfModal)="openPdf()"
+    />
+
+    <!-- Love Letter Section Directly on the Page! (Yellow Flowers Day Theme, Long Distance, :3) -->
+    <app-love-letter-section
+      (openModal)="openLetter()"
+      (openPdf)="openPdf()"
+    />
+
+    <!-- Reasons why she is his ray of sunshine -->
+    <section id="sunshine-reasons" class="w-full max-w-5xl mx-auto px-4 py-12 sm:py-16">
+      <div class="text-center mb-10">
+        <span class="inline-flex items-center gap-1 px-3.5 py-1 rounded-full bg-[#FEF3C7] text-[#92400E] text-xs font-semibold uppercase tracking-wider mb-2">
+          <mat-icon class="text-sm text-[#D97706]">flare</mat-icon>
+          <span>Destellos de tu amor</span>
+        </span>
+        <h2 class="font-serif-cormorant text-3xl sm:text-4xl font-bold text-[#78350F]">
+          Razones por las que eres mi sol
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        @for (reason of loveReasons; track reason.title) {
+          <div class="p-6 rounded-2xl bg-white/90 border border-[#FDE68A] hover:border-[#F59E0B] shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-[#FEF3C7] text-[#B45309] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <mat-icon>{{ reason.icon }}</mat-icon>
+              </div>
+              <h3 class="font-serif-cormorant text-xl font-bold text-[#78350F] mb-2">
+                {{ reason.title }}
+              </h3>
+              <p class="font-sans-clean text-sm text-[#78350F]/80 leading-relaxed">
+                {{ reason.description }}
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-amber-100 flex items-center gap-1 text-xs text-amber-700 font-medium">
+              <mat-icon class="text-sm">favorite</mat-icon>
+              <span>Para ti, mi Aranxita :3</span>
+            </div>
+          </div>
+        }
+      </div>
+    </section>
+
+    <!-- Warm Romantic Quote Banner -->
+    <section class="w-full max-w-4xl mx-auto px-4 py-8 mb-12">
+      <div class="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#FEF3C7] via-[#FFFBEB] to-[#FEF3C7] border-2 border-[#FCD34D]/60 shadow-lg text-center space-y-4">
+        <mat-icon class="text-4xl text-[#F59E0B] animate-soft-glow">favorite</mat-icon>
+        <blockquote class="font-serif-cormorant text-2xl sm:text-3xl italic font-semibold text-[#78350F] leading-snug max-w-xl mx-auto">
+          «Que estas flores amarillas viajen hasta ti y te recuerden que, sin importar los kilómetros, mi amor por ti no tiene límites ni final :3.»
+        </blockquote>
+        <p class="font-script-love text-3xl sm:text-4xl text-[#B45309]">
+          Te amo con todo mi ser, Aranxita :3
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sweet Footer -->
+  <footer class="w-full bg-[#FFFBEB] border-t border-[#FDE68A] py-8 px-4 text-center space-y-3">
+    <div class="flex items-center justify-center gap-2 text-[#92400E]">
+      <mat-icon class="text-amber-500">local_florist</mat-icon>
+      <span class="font-serif-cormorant text-lg font-bold">Flores Amarillas para Aranxita</span>
+      <mat-icon class="text-amber-500">local_florist</mat-icon>
+    </div>
+    <p class="font-sans-clean text-xs sm:text-sm text-[#78350F]/70">
+      Hecho con mucho amor para la mujer más hermosa del universo.
+    </p>
+
+    <div class="pt-2 flex items-center justify-center gap-4">
+      <button
+        id="replay-greeting-btn"
+        type="button"
+        (click)="reopenGreeting()"
+        class="text-xs text-[#92400E] hover:text-[#78350F] underline flex items-center gap-1 cursor-pointer"
+      >
+        <mat-icon class="text-sm">replay</mat-icon>
+        <span>Ver dedicatoria inicial otra vez</span>
+      </button>
+
+      <span class="text-amber-300">•</span>
+
+      <button
+        id="footer-open-pdf-btn"
+        type="button"
+        (click)="openPdf()"
+        class="text-xs text-[#92400E] hover:text-[#78350F] underline flex items-center gap-1 cursor-pointer"
+      >
+        <mat-icon class="text-sm">picture_as_pdf</mat-icon>
+        <span>Carta extra en PDF</span>
+      </button>
+    </div>
+  </footer>
+</div>
